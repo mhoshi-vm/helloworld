@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ecs-demo-catalog
+  description: ecs-demo-catalog
+  tags:
+    - java
+    - spring
+    - web
+    - ecs
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=ecs-test'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
